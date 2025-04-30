@@ -254,7 +254,6 @@ export async function runAssertion({
     gleu: handleGleuScore,
     guardrails: handleGuardrails,
     'g-eval': handleGEval,
-
     icontains: handleIContains,
     'icontains-all': handleIContainsAll,
     'icontains-any': handleIContainsAny,
