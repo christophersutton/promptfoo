@@ -15,9 +15,7 @@ export const FINISH_REASON_MAP: Record<string, string> = {
  * @param raw - The raw finish_reason/stop_reason (snake_case or camelCase).
  * @returns A normalized finish reason string or undefined if missing.
  */
-export function normalizeFinishReason(
-  raw?: string | null
-): string | undefined {
+export function normalizeFinishReason(raw?: string | null): string | undefined {
   if (raw == null) {
     return undefined;
   }
