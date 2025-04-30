@@ -113,6 +113,7 @@ export interface ProviderResponse {
   isRefusal?: boolean;
   sessionId?: string;
   guardrails?: GuardrailResponse;
+  finishReason?: string;
   audio?: {
     id?: string;
     expiresAt?: number;

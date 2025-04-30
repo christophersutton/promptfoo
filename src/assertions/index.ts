@@ -57,6 +57,7 @@ import { handleContextRelevance } from './contextRelevance';
 import { handleCost } from './cost';
 import { handleEquals } from './equals';
 import { handleFactuality } from './factuality';
+import { handleFinishReason } from './finishReason';
 import { handleIsValidFunctionCall } from './functionToolCall';
 import { handleGEval } from './geval';
 import { handleGleuScore } from './gleu';
@@ -249,9 +250,11 @@ export async function runAssertion({
     cost: handleCost,
     equals: handleEquals,
     factuality: handleFactuality,
+    'finish-reason': handleFinishReason,
     gleu: handleGleuScore,
     guardrails: handleGuardrails,
     'g-eval': handleGEval,
+
     icontains: handleIContains,
     'icontains-all': handleIContainsAll,
     'icontains-any': handleIContainsAny,
