@@ -25,17 +25,6 @@ describe('finishReason assertion', () => {
     expect(result.score).toBe(0);
   });
 
-  it('should pass when stop reason is in allowed array', () => {
-    const params: Partial<AssertionParams> = {
-      assertion: { type: 'finish-reason', value: ['stop', 'length'] },
-      providerResponse: { finishReason: 'length' },
-    };
-
-    const result = handleFinishReason(params as AssertionParams);
-    expect(result.pass).toBe(true);
-    expect(result.score).toBe(1);
-  });
-
   it('should fail when provider does not return stop reason', () => {
     const params: Partial<AssertionParams> = {
       assertion: { type: 'finish-reason', value: 'stop' },

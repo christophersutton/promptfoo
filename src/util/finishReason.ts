@@ -1,9 +1,11 @@
 export const FINISH_REASON_MAP: Record<string, string> = {
+  // OpenAI
   stop: 'stop',
   length: 'length',
   content_filter: 'content_filter',
   tool_calls: 'tool_calls',
   function_call: 'tool_calls',
+  // Anthropic
   end_turn: 'stop',
   stop_sequence: 'stop',
   max_tokens: 'length',
